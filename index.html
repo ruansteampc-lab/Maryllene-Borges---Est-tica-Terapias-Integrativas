@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maryllene Borges | Estética & Terapias Integrativas em Osasco</title>
+  <meta name="description" content="Estética, beleza e terapias integrativas em Osasco. Conheça Maryllene Borges e agende seu atendimento pelo WhatsApp.">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://marylleneborges.com.br/">
+  <meta property="og:title" content="Maryllene Borges | Estética & Terapias Integrativas em Osasco">
+  <meta property="og:description" content="Atendimento personalizado em estética e terapias integrativas no Condomínio São Cristóvão em Osasco - SP.">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Schema.org Data Estruturada LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Maryllene Borges — Estética & Terapias Integrativas",
+    "image": "https://marylleneborges.com.br/assets/og-image.jpg",
+    "telephone": "+5511983306355",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Juan Vicente, 482 - Bl 21 - Condomínio São Cristóvão",
+      "addressLocality": "Osasco",
+      "addressRegion": "SP",
+      "postalCode": "06160-180",
+      "addressCountry": "BR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "72"
+    },
+    "priceRange": "$$"
+  }
+  </script>
+
+  <style>
+    /* ==========================================================================
+       1. VARIÁVEIS E RESET
+       ========================================================================== */
+    :root {
+      --verde-salvia-profundo: #53665A;
+      --verde-oliva-suave: #788574;
+      --ameixa-elegante: #684E61;
+      --off-white-quente: #F5F1EA;
+      --bege-natural: #DDD5C8;
+      --cobre-fosco: #A8765B;
+      --grafite-suave: #292B29;
+      --branco-puro: #FFFFFF;
+      --fonte-titulo: 'Cormorant Garamond', serif;
+      --fonte-corpo: 'Plus Jakarta Sans', sans-serif;
+      --sombra-suave: 0 10px 30px rgba(41, 43, 41, 0.05);
+      --sombra-elevada: 0 20px 40px rgba(41, 43, 41, 0.08);
+      --transicao: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--fonte-corpo);
+      background-color: var(--off-white-quente);
+      color: var(--grafite-suave);
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transicao);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ==========================================================================
+       2. TIPOGRAFIA & UTILITÁRIOS
+       ========================================================================== */
+    h1, h2, h3, h4 {
+      font-family: var(--fonte-titulo);
+      font-weight: 500;
+      line-height: 1.2;
+      color: var(--verde-salvia-profundo);
+    }
+
+    p {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--grafite-suave);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .section-padding {
+      padding: 100px 0;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .tag-subhead {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--cobre-fosco);
+      font-weight: 600;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 32px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: var(--transicao);
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background-color: var(--verde-salvia-profundo);
+      color: var(--off-white-quente);
+    }
+
+    .btn-primary:hover {
+      background-color: #3f4e45;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(83, 102, 90, 0.25);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      border-color: var(--verde-salvia-profundo);
+      color: var(--verde-salvia-profundo);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--verde-salvia-profundo);
+      color: var(--off-white-quente);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-copper {
+      background: transparent;
+      border: 1px solid var(--cobre-fosco);
+      color: var(--cobre-fosco);
+    }
+
+    .btn-outline-copper:hover {
+      background: var(--cobre-fosco);
+      color: var(--off-white-quente);
+    }
+
+    /* Animação Fade Up */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ==========================================================================
+       3. HEADER
+       ========================================================================== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: var(--transicao);
+      padding: 24px 0;
+      background: rgba(245, 241, 234, 0.85);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(221, 213, 200, 0.4);
+    }
+
+    header.scrolled {
+      padding: 16px 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo .brand-name {
+      font-family: var(--fonte-titulo);
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--verde-salvia-profundo);
+      letter-spacing: 0.5px;
+      line-height: 1;
+    }
+
+    .logo .brand-tag {
+      font-size: 0.7rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--verde-oliva-suave);
+      margin-top: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: var(--grafite-suave);
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: var(--cobre-fosco);
+      transition: var(--transicao);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .header-cta {
+      padding: 10px 22px;
+      font-size: 0.85rem;
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--verde-salvia-profundo);
+    }
+
+    /* ==========================================================================
+       4. HERO SECTION
+       ========================================================================== */
+    .hero {
+      padding-top: 180px;
+      padding-bottom: 100px;
+      position: relative;
+      background: linear-gradient(135deg, rgba(245,241,234,1) 0%, rgba(221,213,200,0.3) 100%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      margin-bottom: 24px;
+      color: var(--verde-salvia-profundo);
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 36px;
+      max-width: 580px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .hero-proof {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding-top: 24px;
+      border-top: 1px solid var(--bege-natural);
+    }
+
+    .stars {
+      color: var(--cobre-fosco);
+      font-size: 1rem;
+    }
+
+    .proof-text {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--grafite-suave);
+    }
+
+    .location-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      color: var(--verde-oliva-suave);
+      margin-left: auto;
+    }
+
+    .hero-card {
+      background: var(--branco-puro);
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: var(--sombra-elevada);
+      border: 1px solid rgba(221, 213, 200, 0.5);
+      position: relative;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      border: 1px solid var(--bege-natural);
+      border-radius: 4px;
+      pointer-events: none;
+    }
+
+    .hero-card-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .hero-card-icon {
+      font-size: 2.5rem;
+      color: var(--cobre-fosco);
+      margin-bottom: 20px;
+    }
+
+    .hero-card-title {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+      color: var(--verde-salvia-profundo);
+    }
+
+    .hero-card-text {
+      font-size: 0.95rem;
+      font-style: italic;
+      color: var(--grafite-suave);
+    }
+
+    /* ==========================================================================
+       5. POSICIONAMENTO & PILARES
+       ========================================================================== */
+    .posicionamento {
+      background-color: var(--branco-puro);
+    }
+
+    .posicionamento-intro {
+      max-width: 750px;
+      margin: 0 auto 60px auto;
+      text-align: center;
+    }
+
+    .posicionamento-intro h2 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+
+    .pilares-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .pilar-card {
+      padding: 40px 30px;
+      background: var(--off-white-quente);
+      border-radius: 6px;
+      transition: var(--transicao);
+      border-top: 3px solid transparent;
+    }
+
+    .pilar-card:hover {
+      transform: translateY(-5px);
+      border-top-color: var(--cobre-fosco);
+      box-shadow: var(--sombra-suave);
+    }
+
+    .pilar-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+      color: var(--verde-salvia-profundo);
+    }
+
+    .pilar-card p {
+      font-size: 0.95rem;
+    }
+
+    /* ==========================================================================
+       6. SOBRE MARYLLENE
+       ========================================================================== */
+    .sobre-box {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      background: var(--branco-puro);
+      padding: 60px 40px;
+      border-radius: 8px;
+      box-shadow: var(--sombra-suave);
+      border: 1px solid var(--bege-natural);
+    }
+
+    .sobre-conteudo h2 {
+      font-size: 2.8rem;
+      margin-bottom: 24px;
+    }
+
+    .sobre-quote {
+      font-family: var(--fonte-titulo);
+      font-size: 1.5rem;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--ameixa-elegante);
+      margin: 0 auto 28px auto;
+      max-width: 680px;
+      position: relative;
+    }
+
+    .sobre-quote::before {
+      content: '“';
+      font-size: 3rem;
+      color: var(--cobre-fosco);
+      display: block;
+      line-height: 1;
+      margin-bottom: -10px;
+    }
+
+    /* ==========================================================================
+       7. SERVIÇOS
+       ========================================================================== */
+    .servicos {
+      background-color: var(--branco-puro);
+    }
+
+    .servicos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .servico-card {
+      padding: 36px 28px;
+      background-color: var(--off-white-quente);
+      border-radius: 6px;
+      border: 1px solid var(--bege-natural);
+      transition: var(--transicao);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .servico-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--sombra-suave);
+      border-color: var(--verde-oliva-suave);
+    }
+
+    .servico-icon {
+      font-size: 1.8rem;
+      color: var(--cobre-fosco);
+      margin-bottom: 20px;
+    }
+
+    .servico-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+    }
+
+    .servico-card p {
+      font-size: 0.95rem;
+    }
+
+    .servicos-cta-box {
+      background-color: var(--off-white-quente);
+      border: 1px dashed var(--verde-oliva-suave);
+      padding: 40px;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .servicos-cta-box h3 {
+      font-size: 1.8rem;
+      margin-bottom: 16px;
+    }
+
+    /* ==========================================================================
+       8. EXPERIÊNCIA
+       ========================================================================== */
+    .jornada-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 50px;
+    }
+
+    .jornada-step {
+      position: relative;
+      padding: 30px 20px;
+      background: var(--branco-puro);
+      border-radius: 6px;
+      box-shadow: var(--sombra-suave);
+    }
+
+    .step-num {
+      font-family: var(--fonte-titulo);
+      font-size: 2.2rem;
+      color: var(--cobre-fosco);
+      font-weight: 600;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .jornada-step h3 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+
+    .jornada-step p {
+      font-size: 0.9rem;
+    }
+
+    /* ==========================================================================
+       9. AROMATERAPIA E TERAPIAS INTEGRATIVAS
+       ========================================================================== */
+    .aromaterapia {
+      background-color: var(--verde-salvia-profundo);
+      color: var(--off-white-quente);
+    }
+
+    .aromaterapia h2, 
+    .aromaterapia h3 {
+      color: var(--off-white-quente);
+    }
+
+    .aromaterapia p {
+      color: rgba(245, 241, 234, 0.9);
+    }
+
+    .aromaterapia-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .peppermint-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(221, 213, 200, 0.2);
+      padding: 32px;
+      border-radius: 8px;
+      backdrop-filter: blur(5px);
+    }
+
+    .peppermint-card .tag-subhead {
+      color: var(--bege-natural);
+    }
+
+    /* ==========================================================================
+       10. AVALIAÇÕES
+       ========================================================================== */
+    .avaliacoes {
+      background-color: var(--branco-puro);
+    }
+
+    .rating-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    .rating-score {
+      font-family: var(--fonte-titulo);
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: var(--verde-salvia-profundo);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .review-card {
+      background: var(--off-white-quente);
+      padding: 32px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--sombra-suave);
+    }
+
+    .review-quote {
+      font-style: italic;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .review-author {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--verde-salvia-profundo);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .review-author::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 1px;
+      background: var(--cobre-fosco);
+    }
+
+    /* ==========================================================================
+       11. INDICADORES DE CONFIANÇA
+       ========================================================================== */
+    .trust-bar {
+      background-color: var(--bege-natural);
+      padding: 24px 0;
+      border-top: 1px solid rgba(0,0,0,0.05);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .trust-flex {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--verde-salvia-profundo);
+    }
+
+    .trust-item i {
+      color: var(--cobre-fosco);
+    }
+
+    /* ==========================================================================
+       12. INCLUSÃO, LOCALIZAÇÃO & HORÁRIOS
+       ========================================================================== */
+    .inclusao-section {
+      background-color: var(--off-white-quente);
+      text-align: center;
+      padding: 60px 0;
+      border-top: 1px solid var(--bege-natural);
+      border-bottom: 1px solid var(--bege-natural);
+    }
+
+    .inclusao-box {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .localizacao-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .mapa-box {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--sombra-suave);
+      min-height: 380px;
+    }
+
+    .mapa-box iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .info-card {
+      background: var(--branco-puro);
+      padding: 36px;
+      border-radius: 8px;
+      box-shadow: var(--sombra-suave);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .address-details h3 {
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+    }
+
+    .horarios-card {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--bege-natural);
+    }
+
+    .status-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(104, 78, 97, 0.1);
+      color: var(--ameixa-elegante);
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    /* ==========================================================================
+       13. CTA FINAL & FOOTER
+       ========================================================================== */
+    .cta-final {
+      background: linear-gradient(rgba(83, 102, 90, 0.95), rgba(83, 102, 90, 0.95));
+      color: var(--off-white-quente);
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .cta-final h2 {
+      color: var(--off-white-quente);
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-final p {
+      color: rgba(245, 241, 234, 0.9);
+      max-width: 600px;
+      margin: 0 auto 40px auto;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    footer {
+      background-color: var(--grafite-suave);
+      color: var(--bege-natural);
+      padding: 70px 0 30px 0;
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .footer-brand .brand-name {
+      color: var(--off-white-quente);
+      font-family: var(--fonte-titulo);
+      font-size: 1.8rem;
+    }
+
+    .footer-links h4 {
+      color: var(--off-white-quente);
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .footer-links ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a:hover {
+      color: var(--cobre-fosco);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.8rem;
+      color: rgba(245, 241, 234, 0.5);
+    }
+
+    /* Botão Flutuante do WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 56px;
+      height: 56px;
+      background-color: var(--verde-salvia-profundo);
+      color: var(--off-white-quente);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      z-index: 999;
+      transition: var(--transicao);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+      background-color: var(--cobre-fosco);
+    }
+
+    /* ==========================================================================
+       14. RESPONSIVIDADE (MOBILE & TABLET)
+       ========================================================================== */
+    @media (max-width: 992px) {
+      .hero-grid,
+      .aromaterapia-grid,
+      .localizacao-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .pilares-grid,
+      .servicos-grid,
+      .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .jornada-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: var(--off-white-quente);
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+        transition: var(--transicao);
+        z-index: 1001;
+      }
+
+      .nav-links.active {
+        right: 0;
+      }
+
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .pilares-grid,
+      .servicos-grid,
+      .reviews-grid,
+      .jornada-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero-proof {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      .location-badge {
+        margin-left: 0;
+      }
+
+      .sobre-box {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER
+       ========================================================================== -->
+  <header id="header">
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">
+        <span class="brand-name">Maryllene Borges</span>
+        <span class="brand-tag">Estética & Terapias Integrativas</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+        <a href="https://wa.me/5511983306355?text=Ol%C3%A1,%20Maryllene!%20Conheci%20seu%20trabalho%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos%20e%20hor%C3%A1rios%20dispon%C3%ADveis." target="_blank" class="btn btn-primary header-cta">Agendar horário</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section id="inicio" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content reveal">
+          <span class="tag-subhead">Atendimento em Osasco — SP</span>
+          <h1>Cuidado que começa por fora e transforma como você se sente por dentro.</h1>
+          <p>Estética, beleza e terapias integrativas em um atendimento pensado para respeitar sua individualidade, sua rotina e o seu momento.</p>
+          
+          <div class="hero-actions">
+            <a href="https://wa.me/5511983306355?text=Ol%C3%A1,%20Maryllene!%20Conheci%20seu%20trabalho%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos%20e%20hor%C3%A1rios%20dispon%C3%ADveis." target="_blank" class="btn btn-primary">
+              <i class="fa-brands fa-whatsapp"></i> Agendar atendimento
+            </a>
+            <a href="#servicos" class="btn btn-secondary">Conhecer serviços</a>
+          </div>
+
+          <div class="hero-proof">
+            <div class="stars">★★★★★</div>
+            <div class="proof-text">5,0 no Google • 72 avaliações</div>
+            <div class="location-badge">
+              <i class="fa-solid fa-location-dot"></i> Condomínio São Cristóvão
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="hero-card-content">
+            <div class="hero-card-icon">
+              <i class="fa-solid fa-spa"></i>
+            </div>
+            <h2 class="hero-card-title">Experiência Integrativa</h2>
+            <p class="hero-card-text">"Um ambiente sereno desenhado para pausar a correria diária e reconectar você com seu bem-estar natural."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       POSICIONAMENTO
+       ========================================================================== -->
+  <section class="posicionamento section-padding">
+    <div class="container">
+      <div class="posicionamento-intro reveal text-center">
+        <span class="tag-subhead">Filosofia de Atendimento</span>
+        <h2>Um momento para cuidar de você.</h2>
+        <p>O atendimento une estética, atenção aos detalhes, bem-estar e terapias integrativas em uma experiência acolhedora e personalizada.</p>
+      </div>
+
+      <div class="pilares-grid">
+        <div class="pilar-card reveal">
+          <h3>Estética com propósito</h3>
+          <p>Cuidados escolhidos de acordo com as necessidades e objetivos individuais de cada pessoa.</p>
+        </div>
+
+        <div class="pilar-card reveal">
+          <h3>Atendimento acolhedor</h3>
+          <p>Cada atendimento é realizado com inteira atenção, cuidado minucioso e profundo respeito.</p>
+        </div>
+
+        <div class="pilar-card reveal">
+          <h3>Bem-estar integral</h3>
+          <p>Uma experiência completa que valoriza a harmonia da beleza, o relaxamento e o equilíbrio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SOBRE MARYLLENE
+       ========================================================================== -->
+  <section id="sobre" class="section-padding">
+    <div class="container">
+      <div class="sobre-box reveal">
+        <div class="sobre-conteudo">
+          <span class="tag-subhead">Quem cuida de você</span>
+          <h2>Maryllene Borges</h2>
+          <blockquote class="sobre-quote">
+            Mais do que realizar procedimentos estéticos, meu propósito é proporcionar momentos de cuidado, autoestima e bem-estar. Cada atendimento é conduzido de maneira individualizada, respeitando as necessidades e preferências de cada cliente.
+          </blockquote>
+          <p>Atuando em Osasco, no Condomínio São Cristóvão, Maryllene oferece uma abordagem que conecta os cuidados estéticos com o acolhimento das terapias integrativas, promovendo uma pausa revigorante na sua rotina.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SERVIÇOS
+       ========================================================================== -->
+  <section id="servicos" class="servicos section-padding">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: 50px;">
+        <span class="tag-subhead">Cuidados Dedicados</span>
+        <h2>Serviços & Experiências</h2>
+      </div>
+
+      <div class="servicos-grid">
+        <div class="servico-card reveal">
+          <div class="servico-icon"><i class="fa-solid fa-feather"></i></div>
+          <h3>Limpeza de Pele</h3>
+          <p>Cuidados para higienização, revitalização e manutenção da aparência saudável da pele.</p>
+        </div>
+
+        <div class="servico-card reveal">
+          <div class="servico-icon"><i class="fa-solid fa-eye"></i></div>
+          <h3>Design de Sobrancelhas</h3>
+          <p>Design personalizado valorizando as proporções e características naturais do rosto.</p>
+        </div>
+
+        <div class="servico-card reveal">
+          <div class="servico-icon"><i class="fa-solid fa-sparkles"></i></div>
+          <h3>Cuidados Faciais</h3>
+          <p>Procedimentos estéticos voltados ao cuidado continuado e à aparência radiante da pele.</p>
+        </div>
+
+        <div class="servico-card reveal">
+          <div class="servico-icon"><i class="fa-solid fa-droplet"></i></div>
+          <h3>Aromaterapia</h3>
+          <p>Experiências utilizando aromas e óleos essenciais associados a momentos de relaxamento e bem-estar.</p>
+        </div>
+
+        <div class="servico-card reveal">
+          <div class="servico-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <h3>Terapias Integrativas</h3>
+          <p>Momentos pensados para promover relaxamento, acolhimento e equilíbrio interno.</p>
+        </div>
+
+        <div class="servico-card reveal">
+          <div class="servico-icon"><i class="fa-solid fa-leaf"></i></div>
+          <h3>Autocuidado Personalizado</h3>
+          <p>Atendimentos minuciosamente adaptados às preferências e necessidades individuais.</p>
+        </div>
+      </div>
+
+      <div class="servicos-cta-box reveal">
+        <h3>Quer descobrir qual cuidado combina com você?</h3>
+        <a href="https://wa.me/5511983306355?text=Ol%C3%A1,%20Maryllene!%20Gostaria%20de%20saber%20qual%20atendimento%20%C3%A9%20o%20mais%20indicado%20para%20o%20meu%20momento." target="_blank" class="btn btn-primary">
+          <i class="fa-brands fa-whatsapp"></i> Falar com Maryllene
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EXPERIÊNCIA (JORNADA)
+       ========================================================================== -->
+  <section id="experiencia" class="section-padding">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="tag-subhead">A Jornada</span>
+        <h2>Mais do que um atendimento</h2>
+      </div>
+
+      <div class="jornada-grid">
+        <div class="jornada-step reveal">
+          <span class="step-num">01</span>
+          <h3>Conversa inicial</h3>
+          <p>Entendimento atento das suas preferências, rotina e necessidades particulares.</p>
+        </div>
+
+        <div class="jornada-step reveal">
+          <span class="step-num">02</span>
+          <h3>Atendimento personalizado</h3>
+          <p>Cada detalhe da sessão é planejado e executado de forma estritamente individual.</p>
+        </div>
+
+        <div class="jornada-step reveal">
+          <span class="step-num">03</span>
+          <h3>Momento de cuidado</h3>
+          <p>Um ambiente preparado para proporcionar completo conforto, silêncio e tranquilidade.</p>
+        </div>
+
+        <div class="jornada-step reveal">
+          <span class="step-num">04</span>
+          <h3>Orientações</h3>
+          <p>Cuidados e recomendações adequadas para manter o bem-estar após o atendimento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       AROMATERAPIA E TERAPIAS INTEGRATIVAS
+       ========================================================================== -->
+  <section class="aromaterapia section-padding">
+    <div class="container">
+      <div class="aromaterapia-grid">
+        <div class="reveal">
+          <span class="tag-subhead">Sensorial & Equilíbrio</span>
+          <h2>Bem-estar através dos sentidos</h2>
+          <p style="margin-top: 16px;">“Aromas fazem parte de experiências que podem tornar momentos de autocuidado ainda mais especiais. Dentro da proposta de terapias integrativas, elementos como óleos essenciais podem fazer parte da experiência de atendimento.”</p>
+        </div>
+
+        <div class="peppermint-card reveal">
+          <span class="tag-subhead">Elemento Botânico</span>
+          <h3>Peppermint</h3>
+          <p style="margin-top: 12px;">Conhecido pelo aroma fresco e marcante, é frequentemente utilizado em experiências aromáticas associadas à sensação de frescor e vitalidade durante os momentos de pausa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INDICADORES DE CONFIANÇA
+       ========================================================================== -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-flex">
+        <div class="trust-item"><i class="fa-solid fa-star"></i> 5,0 no Google</div>
+        <div class="trust-item"><i class="fa-solid fa-comments"></i> 72 avaliações reais</div>
+        <div class="trust-item"><i class="fa-solid fa-heart"></i> Atendimento personalizado</div>
+        <div class="trust-item"><i class="fa-solid fa-location-dot"></i> Osasco — SP</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       AVALIAÇÕES
+       ========================================================================== -->
+  <section id="avaliacoes" class="avaliacoes section-padding">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="tag-subhead">Depoimentos</span>
+        <h2>Quem conhece, recomenda</h2>
+        <div class="rating-header">
+          <span class="rating-score">5,0</span>
+          <div>
+            <div class="stars">★★★★★</div>
+            <span style="font-size: 0.85rem; color: var(--verde-oliva-suave);">72 avaliações no Google</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <p class="review-quote">“Quero deixar aqui meu carinho e reconhecimento por essa profissional incrível! Faço minha sobrancelha com ela e sempre saio extremamente satisfeita.”</p>
+          <span class="review-author">Karin Cristina Barbosa</span>
+        </div>
+
+        <div class="review-card reveal">
+          <p class="review-quote">“Trabalho impecável e atendimento maravilhoso. Super indico. Obrigada por cuidar tão bem de mim.”</p>
+          <span class="review-author">Marina Pereira da Silva</span>
+        </div>
+
+        <div class="review-card reveal">
+          <p class="review-quote">“Super indico a Mari. Super profissional, sempre dedicada e atenciosa.”</p>
+          <span class="review-author">Nilza Aguiar da Silva</span>
+        </div>
+      </div>
+
+      <div class="text-center reveal">
+        <a href="https://www.google.com/search?q=Maryllene+Borges+Estetica+Osasco" target="_blank" class="btn btn-outline-copper">
+          <i class="fa-brands fa-google"></i> Ver avaliações no Google
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INCLUSÃO E ACOLHIMENTO
+       ========================================================================== -->
+  <section class="inclusao-section">
+    <div class="container">
+      <div class="inclusao-box reveal">
+        <span class="tag-subhead">Respeito & Diversidade</span>
+        <h3 style="font-size: 1.8rem; margin-bottom: 12px;">Cuidado é para todos.</h3>
+        <p>“Um espaço onde cada pessoa deve se sentir respeitada, confortável e bem recebida.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LOCALIZAÇÃO & HORÁRIOS
+       ========================================================================== -->
+  <section id="contato" class="section-padding">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="tag-subhead">Onde Estamos</span>
+        <h2>Visite nosso espaço</h2>
+      </div>
+
+      <div class="localizacao-grid">
+        <div class="info-card reveal">
+          <div class="address-details">
+            <h3>Maryllene Borges</h3>
+            <p style="margin-bottom: 8px;"><strong>Estética & Terapias Integrativas</strong></p>
+            <p>R. Juan Vicente, 482 - Bl 21</p>
+            <p>Bandeiras, Osasco - SP</p>
+            <p>CEP 06160-180</p>
+            <p style="margin-top: 8px; color: var(--cobre-fosco);"><em>Localizado no Condomínio São Cristóvão</em></p>
+          </div>
+
+          <div class="horarios-card">
+            <span class="status-tag">Status de Atendimento</span>
+            <p style="font-size: 0.95rem; margin-bottom: 12px;">Fechado atualmente — abre terça-feira às 10:00</p>
+            <p style="font-size: 0.85rem; color: var(--verde-oliva-suave);">Consulte os horários disponíveis pelo WhatsApp.</p>
+          </div>
+
+          <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="https://maps.google.com/?q=R.+Juan+Vicente,+482+-+Bandeiras,+Osasco+-+SP,+06160-180" target="_blank" class="btn btn-secondary" style="padding: 12px 20px; font-size: 0.85rem;">
+              <i class="fa-solid fa-route"></i> Traçar rota
+            </a>
+            <a href="https://wa.me/5511983306355?text=Ol%C3%A1,%20Maryllene!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" class="btn btn-primary" style="padding: 12px 20px; font-size: 0.85rem;">
+              <i class="fa-brands fa-whatsapp"></i> Agendar pelo WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="mapa-box reveal">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.801683935245!2d-46.8041008237599!3d-23.539634978813735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce813f8c854ff7%3A0x8e82a84b067a99f1!2sR.%20Juan%20Vicente%2C%20482%20-%20Bandeiras%2C%20Osasco%20-%20SP%2C%2006160-180!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CTA FINAL
+       ========================================================================== -->
+  <section class="cta-final">
+    <div class="container reveal">
+      <h2>Seu próximo momento de cuidado pode começar agora.</h2>
+      <p>Entre em contato para conhecer os atendimentos disponíveis e encontrar o melhor horário para você.</p>
+      
+      <div class="cta-buttons">
+        <a href="https://wa.me/5511983306355?text=Ol%C3%A1,%20Maryllene!%20Conheci%20seu%20trabalho%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos%20e%20hor%C3%A1rios%20dispon%C3%ADveis." target="_blank" class="btn btn-primary" style="background-color: var(--off-white-quente); color: var(--verde-salvia-profundo);">
+          <i class="fa-brands fa-whatsapp"></i> Agendar pelo WhatsApp
+        </a>
+        <a href="https://instagram.com" target="_blank" class="btn btn-secondary" style="border-color: var(--off-white-quente); color: var(--off-white-quente);">
+          <i class="fa-brands fa-instagram"></i> Ver Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand-name">Maryllene Borges</span>
+          <p style="color: rgba(245, 241, 234, 0.7); margin-top: 10px;">Estética & Terapias Integrativas</p>
+          <p style="color: rgba(245, 241, 234, 0.5); font-size: 0.85rem; margin-top: 16px;">Bandeiras — Osasco, SP</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+            <li><a href="#contato">Localização</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Contato & Social</h4>
+          <ul>
+            <li><a href="https://wa.me/5511983306355" target="_blank">(11) 98330-6355</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Maryllene Borges. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="https://wa.me/5511983306355?text=Ol%C3%A1,%20Maryllene!%20Conheci%20seu%20trabalho%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos%20e%20hor%C3%A1rios%20dispon%C3%ADveis." class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ==========================================================================
+       JAVASCRIPT FUNCIONAL
+       ========================================================================== -->
+  <script>
+    // 1. Efeito de Scroll no Header
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // 2. Menu Mobile Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Fechar menu ao clicar em um link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // 3. Animação Reveal no Scroll (Fade Up Suave)
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealOnScroll = () => {
+      const windowHeight = window.innerHeight;
+      const elementVisible = 100;
+
+      revealElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - elementVisible) {
+          el.classList.add('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    // Execução inicial para elementos na tela
+    revealOnScroll();
+  </script>
+</body>
+</html>

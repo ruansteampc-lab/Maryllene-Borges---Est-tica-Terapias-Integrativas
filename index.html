@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portas de Aço Emanuel | Serralheria em Taboão da Serra</title>
+    <meta name="description" content="Portas de aço, fabricação sob medida, instalação, manutenção e reparos em Taboão da Serra e região. Portas de Aço Emanuel, atendimento 24 horas. Solicite um orçamento pelo WhatsApp.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portasdeacoemanuel.com.br/">
+    <meta property="og:title" content="Portas de Aço Emanuel | Serralheria em Taboão da Serra">
+    <meta property="og:description" content="Fabricação, instalação, manutenção e reparo de portas de aço em Taboão da Serra e região. Atendimento 24 horas. Nota 5.0 no Google.">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Favicon SVG Industrial -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23090909'/><path d='M20 25h60v50H20z' fill='none' stroke='%23C4161C' stroke-width='6'/><path d='M20 38h60M20 50h60M20 62h60' stroke='%23606368' stroke-width='4'/></svg>">
+
+    <!-- Google Fonts: Inter e Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Schema.org Data Structured (LocalBusiness) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Portas de Aço Emanuel",
+      "image": "https://portasdeacoemanuel.com.br/logo.jpg",
+      "telephone": "+5511911876222",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Vicente Pereira, 131 - Parque Maraba",
+        "addressLocality": "Taboão da Serra",
+        "addressRegion": "SP",
+        "postalCode": "06766-020",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.6261,
+        "longitude": -46.7915
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "53"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* ==========================================================================
+           RESET E VARIÁVEIS DE DESIGN SYSTEM (PRETO + VERMELHO + AÇO)
+           ========================================================================== */
+        :root {
+            --bg-deep: #090909;
+            --bg-graphite: #151515;
+            --bg-charcoal: #242424;
+            --border-steel: #33363a;
+            --text-steel: #606368;
+            --text-light: #f2f0ec;
+            --text-muted: #a0a4a8;
+            
+            --red-main: #C4161C;
+            --red-dark: #851015;
+            --red-accent: #E11B22;
+
+            --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+            --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            background-color: var(--bg-deep);
+            color: var(--text-light);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            overflow-x: hidden;
+            /* Textura sutil de fundo estilo chapa industrial */
+            background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ==========================================================================
+           COMPONENTES UTILITÁRIOS E BOTÕES
+           ========================================================================== */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-padding {
+            padding: 5rem 0;
+        }
+
+        .text-highlight {
+            color: var(--red-main);
+        }
+
+        .tag-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: var(--font-heading);
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--red-main);
+            margin-bottom: 0.75rem;
+        }
+
+        .tag-label::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: var(--red-main);
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 2.25rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            max-width: 600px;
+        }
+
+        /* Botões com cantos vivos e corte geométrico técnico */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 1rem 1.75rem;
+            font-family: var(--font-heading);
+            font-size: 0.875rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            position: relative;
+            clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+        }
+
+        .btn-primary {
+            background-color: var(--red-main);
+            color: #ffffff;
+            border-bottom: 3px solid var(--red-dark);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--red-accent);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(196, 22, 28, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: var(--bg-charcoal);
+            color: var(--text-light);
+            border: 1px solid var(--border-steel);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--border-steel);
+            border-color: var(--text-steel);
+            color: #ffffff;
+        }
+
+        .btn-outline-red {
+            background-color: transparent;
+            color: var(--text-light);
+            border: 1px solid var(--red-main);
+        }
+
+        .btn-outline-red:hover {
+            background-color: var(--red-main);
+            color: #ffffff;
+        }
+
+        /* ==========================================================================
+           HEADER FIXO
+           ========================================================================== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(9, 9, 9, 0.92);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+        }
+
+        .header.scrolled {
+            border-bottom-color: var(--red-main);
+            background-color: rgba(15, 15, 15, 0.98);
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        /* Logo Industrial Exclusivo */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-symbol {
+            width: 38px;
+            height: 38px;
+            background-color: var(--bg-graphite);
+            border: 2px solid var(--border-steel);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 6px 5px;
+            position: relative;
+        }
+
+        .logo-symbol::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 6px;
+            height: 6px;
+            background-color: var(--red-main);
+        }
+
+        .logo-bar {
+            height: 3px;
+            width: 100%;
+            background-color: var(--text-light);
+        }
+
+        .logo-bar:nth-child(2) { background-color: var(--red-main); }
+
+        .logo-text {
+            font-family: var(--font-heading);
+            font-weight: 900;
+            line-height: 0.95;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .logo-text span {
+            display: block;
+            color: var(--red-main);
+            font-size: 1.25rem;
+            letter-spacing: 1.5px;
+        }
+
+        /* Menu */
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            font-family: var(--font-heading);
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            transition: var(--transition);
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--text-light);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--red-main);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .hamburger {
+            width: 26px;
+            height: 2px;
+            background-color: var(--text-light);
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .hamburger::before,
+        .hamburger::after {
+            content: '';
+            position: absolute;
+            width: 26px;
+            height: 2px;
+            background-color: var(--text-light);
+            left: 0;
+            transition: var(--transition);
+        }
+
+        .hamburger::before { top: -8px; }
+        .hamburger::after { bottom: -8px; }
+
+        /* ==========================================================================
+           HERO SECTION
+           ========================================================================== */
+        .hero {
+            padding-top: 150px;
+            padding-bottom: 80px;
+            position: relative;
+            background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-graphite) 100%);
+            border-bottom: 1px solid var(--border-steel);
+            overflow: hidden;
+        }
+
+        /* Detalhes geométricos industriais no fundo */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -10%;
+            width: 50%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                -45deg,
+                rgba(255, 255, 255, 0.015),
+                rgba(255, 255, 255, 0.015) 10px,
+                transparent 10px,
+                transparent 20px
+            );
+            pointer-events: none;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-badge-24h {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.35rem 0.85rem;
+            background-color: rgba(196, 22, 28, 0.15);
+            border: 1px solid var(--red-main);
+            color: var(--text-light);
+            font-family: var(--font-heading);
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-badge-24h .dot {
+            width: 6px;
+            height: 6px;
+            background-color: var(--red-main);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--red-main);
+        }
+
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: 3.25rem;
+            font-weight: 900;
+            line-height: 1.05;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            max-width: 580px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-proof {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stars {
+            color: #FFB800;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+        }
+
+        .proof-text {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .proof-text strong {
+            color: var(--text-light);
+        }
+
+        /* Ilustração/Arte de Porta de Aço Técnica */
+        .hero-visual {
+            position: relative;
+        }
+
+        .steel-door-art {
+            width: 100%;
+            height: 380px;
+            background-color: var(--bg-charcoal);
+            border: 2px solid var(--border-steel);
+            position: relative;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+            overflow: hidden;
+        }
+
+        .door-slats {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            height: 100%;
+            justify-content: center;
+        }
+
+        .slat {
+            height: 16px;
+            width: 100%;
+            background: linear-gradient(90deg, #1f2226 0%, #3a3f47 50%, #1f2226 100%);
+            border-bottom: 1px solid #111;
+            position: relative;
+        }
+
+        .slat::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 1px;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .door-frame-lock {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 24px;
+            background: var(--bg-deep);
+            border: 2px solid var(--red-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 0.65rem;
+            letter-spacing: 1px;
+            color: var(--red-main);
+            font-weight: 800;
+        }
+
+        .door-overlay-tag {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background-color: var(--red-main);
+            color: #fff;
+            padding: 0.75rem 1rem;
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        /* ==========================================================================
+           BARRA DE CREDIBILIDADE
+           ========================================================================== */
+        .credibility-bar {
+            background-color: var(--bg-graphite);
+            border-bottom: 1px solid var(--border-steel);
+            padding: 1.25rem 0;
+        }
+
+        .credibility-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .cred-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.5rem;
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .cred-item:last-child {
+            border-right: none;
+        }
+
+        .cred-number {
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            font-weight: 900;
+            color: var(--red-main);
+            line-height: 1;
+        }
+
+        .cred-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            line-height: 1.2;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .cred-label strong {
+            display: block;
+            color: var(--text-light);
+        }
+
+        /* ==========================================================================
+           SERVIÇOS
+           ========================================================================== */
+        .services-section {
+            background-color: var(--bg-deep);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background-color: var(--bg-graphite);
+            border: 1px solid var(--border-steel);
+            padding: 2rem;
+            position: relative;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 0;
+            background-color: var(--red-main);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            border-color: #444850;
+            background-color: #1a1a1a;
+        }
+
+        .service-card:hover::before {
+            height: 100%;
+        }
+
+        .service-icon {
+            width: 44px;
+            height: 44px;
+            background-color: rgba(196, 22, 28, 0.1);
+            border: 1px solid var(--red-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: var(--red-main);
+        }
+
+        .service-title {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+
+        .service-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card-emergency {
+            grid-column: span 3;
+            background: linear-gradient(90deg, #1c0a0c 0%, var(--bg-graphite) 100%);
+            border-color: var(--red-dark);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem;
+        }
+
+        .service-card-emergency .emergency-content {
+            max-width: 700px;
+        }
+
+        /* ==========================================================================
+           DIFERENCIAIS (LAYOUT ASSIMÉTRICO INDUSTRIAL)
+           ========================================================================== */
+        .differentials-section {
+            background-color: var(--bg-graphite);
+            border-top: 1px solid var(--border-steel);
+            border-bottom: 1px solid var(--border-steel);
+        }
+
+        .diff-layout {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+            align-items: center;
+        }
+
+        .diff-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .diff-item {
+            display: flex;
+            gap: 1.25rem;
+            background-color: var(--bg-deep);
+            padding: 1.25rem 1.5rem;
+            border: 1px solid var(--border-steel);
+            transition: var(--transition);
+        }
+
+        .diff-item:hover {
+            border-color: var(--red-main);
+            transform: translateX(6px);
+        }
+
+        .diff-number {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 900;
+            color: var(--red-main);
+        }
+
+        .diff-item-title {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 0.25rem;
+        }
+
+        .diff-item-desc {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .diff-banner {
+            background-color: var(--bg-charcoal);
+            border: 2px solid var(--border-steel);
+            padding: 3rem 2rem;
+            position: relative;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .diff-banner::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 1px dashed var(--border-steel);
+            pointer-events: none;
+        }
+
+        .diff-big-stat {
+            font-family: var(--font-heading);
+            font-size: 4rem;
+            font-weight: 900;
+            color: var(--text-light);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        /* ==========================================================================
+           TRABALHOS (GRID TÉCNICO ASSIMÉTRICO)
+           ========================================================================== */
+        .work-section {
+            background-color: var(--bg-deep);
+        }
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .work-item {
+            background-color: var(--bg-graphite);
+            border: 1px solid var(--border-steel);
+            height: 260px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1.5rem;
+        }
+
+        /* Efeito visual simulado de metal / projeto caso não tenha imagem */
+        .work-item-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #181a1d 0%, #0d0e0f 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .work-item-placeholder::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-image: repeating-linear-gradient(0deg, transparent, transparent 15px, rgba(255,255,255,0.02) 15px, rgba(255,255,255,0.02) 30px);
+        }
+
+        .work-item:hover .work-item-placeholder {
+            transform: scale(1.05);
+        }
+
+        .work-content {
+            position: relative;
+            z-index: 2;
+            background-color: rgba(9, 9, 9, 0.85);
+            padding: 1rem;
+            border-left: 2px solid var(--red-main);
+            backdrop-filter: blur(4px);
+        }
+
+        .work-title {
+            font-family: var(--font-heading);
+            font-size: 0.95rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .work-tag {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* ==========================================================================
+           SOBRE A EMPRESA
+           ========================================================================== */
+        .about-section {
+            background-color: var(--bg-graphite);
+            border-top: 1px solid var(--border-steel);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .about-box {
+            background-color: var(--bg-deep);
+            border: 1px solid var(--border-steel);
+            padding: 1.25rem;
+        }
+
+        .about-box-num {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--red-main);
+        }
+
+        .about-box-label {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        /* ==========================================================================
+           AVALIAÇÕES (SEM FAKES)
+           ========================================================================== */
+        .reviews-section {
+            background-color: var(--bg-deep);
+            text-align: center;
+        }
+
+        .reviews-card-google {
+            max-width: 650px;
+            margin: 3rem auto 0 auto;
+            background-color: var(--bg-graphite);
+            border: 1px solid var(--border-steel);
+            padding: 3rem 2rem;
+            position: relative;
+        }
+
+        .google-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 1rem auto;
+        }
+
+        .review-score-big {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .review-count {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+
+        /* ==========================================================================
+           ÁREA DE ATENDIMENTO E MAPA
+           ========================================================================== */
+        .location-section {
+            background-color: var(--bg-graphite);
+            border-top: 1px solid var(--border-steel);
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 2.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .location-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .info-card {
+            background-color: var(--bg-deep);
+            border: 1px solid var(--border-steel);
+            padding: 1.25rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .info-card-icon {
+            color: var(--red-main);
+            margin-top: 0.2rem;
+        }
+
+        .info-card-title {
+            font-family: var(--font-heading);
+            font-size: 0.85rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 0.2rem;
+        }
+
+        .info-card-value {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-light);
+        }
+
+        .map-wrapper {
+            width: 100%;
+            height: 380px;
+            border: 2px solid var(--border-steel);
+            background-color: var(--bg-deep);
+            position: relative;
+        }
+
+        .map-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            filter: grayscale(100%) invert(92%) contrast(83%);
+        }
+
+        /* ==========================================================================
+           CTA FINAL POTENTE
+           ========================================================================== */
+        .cta-final-section {
+            background: linear-gradient(135deg, #42080a 0%, var(--bg-deep) 100%);
+            border-top: 2px solid var(--red-main);
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .cta-final-box {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-final-title {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        .cta-final-desc {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .cta-phone-display {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-light);
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        /* ==========================================================================
+           FOOTER
+           ========================================================================== */
+        .footer {
+            background-color: #050505;
+            border-top: 1px solid var(--border-steel);
+            padding: 4rem 0 2rem 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1.5fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col-title {
+            font-family: var(--font-heading);
+            font-size: 0.9rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.25rem;
+            color: var(--text-light);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--red-main);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* ==========================================================================
+           BOTÃO FLUTUANTE WHATSAPP (DESIGN DISCRETO E DIRETO)
+           ========================================================================== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 999;
+            background-color: #25D366;
+            color: #ffffff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            transition: var(--transition);
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #20ba5a;
+        }
+
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: currentColor;
+        }
+
+        /* ==========================================================================
+           RESPONSIVIDADE ACERTA TUDO PARA MOBILE
+           ========================================================================== */
+        @media (max-width: 992px) {
+            .hero-grid,
+            .diff-layout,
+            .about-grid,
+            .location-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .credibility-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .cred-item {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+                padding-bottom: 1rem;
+            }
+
+            .services-grid,
+            .work-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .service-card-emergency {
+                grid-column: span 2;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: var(--bg-graphite);
+                flex-direction: column;
+                padding: 2rem;
+                border-bottom: 2px solid var(--red-main);
+                transform: translateY(-150%);
+                transition: var(--transition);
+            }
+
+            .nav-menu.active {
+                transform: translateY(0);
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .header-cta-btn {
+                display: none;
+            }
+
+            .services-grid,
+            .work-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card-emergency {
+                grid-column: span 1;
+            }
+
+            .credibility-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.75rem;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==========================================================================
+       HEADER FIXO E NAVEGAÇÃO
+       ========================================================================== -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#inicio" class="logo" aria-label="Portas de Aço Emanuel">
+                <div class="logo-symbol">
+                    <div class="logo-bar"></div>
+                    <div class="logo-bar"></div>
+                    <div class="logo-bar"></div>
+                </div>
+                <div class="logo-text">
+                    Portas de Aço
+                    <span>Emanuel</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li><a href="#trabalhos" class="nav-link">Trabalhos</a></li>
+                    <li><a href="#avaliacoes" class="nav-link">Avaliações</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/5511911876222?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Portas%20de%20A%C3%A7o%20Emanuel%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-primary header-cta-btn">
+                Solicitar Orçamento
+            </a>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu">
+                <div class="hamburger"></div>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+    <section class="hero" id="inicio">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge-24h">
+                    <span class="dot"></span>
+                    Atendimento 24 Horas em Taboão da Serra e Região
+                </div>
+                <h1 class="hero-title">
+                    Portas de aço <br>feitas para <span class="text-highlight">durar.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Fabricação, instalação, manutenção e reparo de portas de aço em Taboão da Serra e região, com atendimento disponível 24 horas.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/5511911876222?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Portas%20de%20A%C3%A7o%20Emanuel%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                        Solicitar Orçamento no WhatsApp
+                    </a>
+                    <a href="#servicos" class="btn btn-secondary">
+                        Conhecer Serviços
+                    </a>
+                </div>
+                <div class="hero-proof">
+                    <div class="stars">★★★★★</div>
+                    <div class="proof-text">
+                        <strong>5,0 no Google</strong> · Baseado em 53 avaliações reais
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arte Industrial Técnica -->
+            <div class="hero-visual">
+                <div class="door-overlay-tag">Serralheria Técnica</div>
+                <div class="steel-door-art">
+                    <div class="door-slats">
+                        <div class="slat"></div>
+                        <div class="slat"></div>
+                        <div class="slat"></div>
+                        <div class="slat"></div>
+                        <div class="slat"></div>
+                        <div class="slat"></div>
+                        <div class="slat"></div>
+                        <div class="slat"></div>
+                        <div class="slat"></div>
+                        <div class="slat"></div>
+                        <div class="slat"></div>
+                        <div class="slat"></div>
+                    </div>
+                    <div class="door-frame-lock">EMANUEL</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       BARRA DE CREDIBILIDADE
+       ========================================================================== -->
+    <section class="credibility-bar">
+        <div class="container credibility-grid">
+            <div class="cred-item">
+                <div class="cred-number">24H</div>
+                <div class="cred-label">Atendimento <strong>Ininterrupto</strong></div>
+            </div>
+            <div class="cred-item">
+                <div class="cred-number">5,0 ★</div>
+                <div class="cred-label">Avaliação <strong>no Google</strong></div>
+            </div>
+            <div class="cred-item">
+                <div class="cred-number">53</div>
+                <div class="cred-label">Avaliações <strong>de Clientes</strong></div>
+            </div>
+            <div class="cred-item">
+                <div class="cred-number">SP</div>
+                <div class="cred-label">Taboão da Serra <strong>e Região</strong></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SERVIÇOS
+       ========================================================================== -->
+    <section class="services-section section-padding" id="servicos">
+        <div class="container">
+            <div class="tag-label">Especialização Técnica</div>
+            <h2 class="section-title">Soluções em Portas de Aço</h2>
+            <p class="section-subtitle">Serviços profissionais para comércios, empresas, garagens, depósitos e imóveis residenciais.</p>
+
+            <div class="services-grid">
+                <!-- Serviço 1 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3 class="service-title">Fabricação Sob Medida</h3>
+                        <p class="service-desc">Portas de aço desenvolvidas exatamente de acordo com as medidas e especificações técnicas da sua estrutura.</p>
+                    </div>
+                    <a href="https://wa.me/5511911876222?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20FabricA%C3%A7%C3%A3o%20sob%20medida." target="_blank" rel="noopener noreferrer" class="btn btn-outline-red">Orçar Fabricação</a>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h3 class="service-title">Instalação Profissional</h3>
+                        <p class="service-desc">Instalação ágil e precisa, garantindo alinhamento perfeito, travamento seguro e funcionamento suave.</p>
+                    </div>
+                    <a href="https://wa.me/5511911876222?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20a%20Instala%C3%A7%C3%A3o%20de%20uma%20porta%20de%20a%C3%A7o." target="_blank" rel="noopener noreferrer" class="btn btn-outline-red">Solicitar Instalação</a>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                        </div>
+                        <h3 class="service-title">Manutenção Preventiva</h3>
+                        <p class="service-desc">Revisão periódica de componentes, lubrificação e regulagem para evitar paradas inesperadas e aumentar a durabilidade.</p>
+                    </div>
+                    <a href="https://wa.me/5511911876222?text=Ol%C3%A1!%20Preciso%20de%20Manuten%C3%A7%C3%A3o%20preventiva%20em%20porta%20de%20a%C3%A7o." target="_blank" rel="noopener noreferrer" class="btn btn-outline-red">Agendar Manutenção</a>
+                </div>
+
+                <!-- Serviço 4 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                        </div>
+                        <h3 class="service-title">Reparos e Correções</h3>
+                        <p class="service-desc">Solução técnica para portas travando, desalinhadas, pesadas, emperradas ou com dificuldade no fechamento.</p>
+                    </div>
+                    <a href="https://wa.me/5511911876222?text=Ol%C3%A1!%20Minha%20porta%20de%20a%C3%A7o%20est%C3%A1%20com%20problema,%20preciso%20de%20um%20reparo." target="_blank" rel="noopener noreferrer" class="btn btn-outline-red">Solicitar Reparo</a>
+                </div>
+
+                <!-- Serviço 5 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                        </div>
+                        <h3 class="service-title">Troca de Peças</h3>
+                        <p class="service-desc">Substituição imediata de molas, fitas, eixos, lâminas, travas e componentes desgastados por materiais de alta resistência.</p>
+                    </div>
+                    <a href="https://wa.me/5511911876222?text=Ol%C3%A1!%20Preciso%20de%20troca%20de%20pe%C3%A7as%20para%20minha%20porta%20de%20a%C3%A7o." target="_blank" rel="noopener noreferrer" class="btn btn-outline-red">Trocar Peças</a>
+                </div>
+
+                <!-- Serviço 6 - Emergencial Destaque -->
+                <div class="service-card service-card-emergency">
+                    <div class="emergency-content">
+                        <div class="tag-label" style="color:#fff;">Prontidão Total</div>
+                        <h3 class="service-title" style="font-size: 1.5rem;">Atendimento Emergencial 24 Horas</h3>
+                        <p class="service-desc" style="color: #d0d0d0; margin-bottom: 0;">Sua porta travou aberta ou fechada fora do horário comercial? Atendemos emergências a qualquer hora do dia ou da noite em Taboão da Serra e região.</p>
+                    </div>
+                    <a href="https://wa.me/5511911876222?text=Ol%C3%A1!%20Preciso%20de%20Atendimento%20EMERGENCIAL%2024H%20para%20porta%20de%20a%C3%A7o." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Chamar Urgente</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       DIFERENCIAIS
+       ========================================================================== -->
+    <section class="differentials-section section-padding" id="diferenciais">
+        <div class="container">
+            <div class="tag-label">Compromisso Profissional</div>
+            <h2 class="section-title">Por que escolher a Emanuel?</h2>
+            <p class="section-subtitle">Estrutura focada no atendimento rápido, diagnóstico preciso e soluções definitivas para sua segurança.</p>
+
+            <div class="diff-layout">
+                <div class="diff-list">
+                    <div class="diff-item">
+                        <div class="diff-number">01</div>
+                        <div>
+                            <h3 class="diff-item-title">Atendimento 24 Horas</h3>
+                            <p class="diff-item-desc">Suporte técnico de plantão para resolver problemas urgentes no momento em que você precisa.</p>
+                        </div>
+                    </div>
+                    <div class="diff-item">
+                        <div class="diff-number">02</div>
+                        <div>
+                            <h3 class="diff-item-title">Serviço Especializado</h3>
+                            <p class="diff-item-desc">Domínio completo em serralheria, fabricação e mecanismos de portas de enrolar de aço.</p>
+                        </div>
+                    </div>
+                    <div class="diff-item">
+                        <div class="diff-number">03</div>
+                        <div>
+                            <h3 class="diff-item-title">Contato Direto Sem Intermediários</h3>
+                            <p class="diff-item-desc">Conversa rápida pelo WhatsApp direto com quem entende e vai executar o serviço.</p>
+                        </div>
+                    </div>
+                    <div class="diff-item">
+                        <div class="diff-number">04</div>
+                        <div>
+                            <h3 class="diff-item-title">Presença Regional em Taboão da Serra</h3>
+                            <p class="diff-item-desc">Atendimento focado e ágil para toda a cidade e municípios vizinhos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diff-banner">
+                    <div class="diff-big-stat">5.0 ★</div>
+                    <h3 style="font-family: var(--font-heading); text-transform: uppercase; margin-bottom: 0.5rem;">Reputação Impecável</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 350px; margin-bottom: 1.5rem;">A satisfação de nossos clientes é comprovada com nota máxima no Google.</p>
+                    <a href="https://wa.me/5511911876222?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Falar no WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       TRABALHOS
+       ========================================================================== -->
+    <section class="work-section section-padding" id="trabalhos">
+        <div class="container">
+            <div class="tag-label">Galeria de Execução</div>
+            <h2 class="section-title">Nosso Trabalho</h2>
+            <p class="section-subtitle">Registros e padrões de execução em instalações, fabricação e reparos técnicos.</p>
+
+            <div class="work-grid">
+                <!-- Card de Trabalho 1 -->
+                <div class="work-item">
+                    <div class="work-item-placeholder"></div>
+                    <div class="work-content">
+                        <div class="work-title">Porta de Aço Comercial</div>
+                        <div class="work-tag">Fabricação e Instalação</div>
+                    </div>
+                </div>
+
+                <!-- Card de Trabalho 2 -->
+                <div class="work-item">
+                    <div class="work-item-placeholder"></div>
+                    <div class="work-content">
+                        <div class="work-title">Manutenção de Estrutura</div>
+                        <div class="work-tag">Troca de Molas e Ajuste</div>
+                    </div>
+                </div>
+
+                <!-- Card de Trabalho 3 -->
+                <div class="work-item">
+                    <div class="work-item-placeholder"></div>
+                    <div class="work-content">
+                        <div class="work-title">Porta de Enrolar para Galpão</div>
+                        <div class="work-tag">Projeto Sob Medida</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SOBRE A EMPRESA
+       ========================================================================== -->
+    <section class="about-section section-padding" id="sobre">
+        <div class="container about-grid">
+            <div>
+                <div class="tag-label">Serralheria Especializada</div>
+                <h2 class="section-title">Portas de Aço Emanuel</h2>
+                <p class="about-text">
+                    A <strong>Portas de Aço Emanuel</strong> é uma empresa focada em prestar serviços de serralheria e manutenção técnica de portas de aço em Taboão da Serra e região.
+                </p>
+                <p class="about-text">
+                    Trabalhamos com o compromisso de entregar estruturas resistentes, alinhamentos precisos e um atendimento ágil e transparente, cobrindo emergências 24 horas para garagens, comércios e estabelecimentos industriais.
+                </p>
+                <a href="https://wa.me/5511911876222?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Portas%20de%20A%C3%A7o%20Emanuel." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Falar com o Especialista</a>
+            </div>
+
+            <div class="about-highlights">
+                <div class="about-box">
+                    <div class="about-box-num">5,0 ★</div>
+                    <div class="about-box-label">Pontuação Máxima</div>
+                </div>
+                <div class="about-box">
+                    <div class="about-box-num">53</div>
+                    <div class="about-box-label">Avaliações no Google</div>
+                </div>
+                <div class="about-box">
+                    <div class="about-box-num">24H</div>
+                    <div class="about-box-label">Atendimento Contínuo</div>
+                </div>
+                <div class="about-box">
+                    <div class="about-box-num">SP</div>
+                    <div class="about-box-label">Taboão da Serra - SP</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       AVALIAÇÕES GOOGLE
+       ========================================================================== -->
+    <section class="reviews-section section-padding" id="avaliacoes">
+        <div class="container">
+            <div class="tag-label">Opinião dos Clientes</div>
+            <h2 class="section-title">Quem contrata, recomenda.</h2>
+            
+            <div class="reviews-card-google">
+                <svg class="google-icon" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+                <div class="review-score-big">5.0</div>
+                <div class="stars" style="margin-bottom: 0.5rem;">★★★★★</div>
+                <p class="review-count">Avaliação média excelente no Google com base em <strong>53 avaliações</strong> reais de clientes.</p>
+                
+                <a href="https://www.google.com/maps/search/?api=1&query=Portas+de+A%C3%A7o+Emanuel+Tabo%C3%A3o+da+Serra" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver avaliações no Google</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       LOCALIZAÇÃO E ATENDIMENTO
+       ========================================================================== -->
+    <section class="location-section section-padding" id="contato">
+        <div class="container">
+            <div class="tag-label">Região de Cobertura</div>
+            <h2 class="section-title">Atendimento em Taboão da Serra e Região</h2>
+
+            <div class="location-grid">
+                <div class="location-info">
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <div class="info-card-title">Endereço</div>
+                            <div class="info-card-value">R. Vicente Pereira, 131 - Parque Maraba<br>Taboão da Serra - SP, 06766-020</div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <div class="info-card-title">Telefone / WhatsApp</div>
+                            <div class="info-card-value">(11) 91187-6222</div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <div class="info-card-title">Funcionamento</div>
+                            <div class="info-card-value">Aberto 24 Horas</div>
+                        </div>
+                    </div>
+
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=R.+Vicente+Pereira,+131+-+Parque+Maraba,+Tabo%C3%A3o+da+Serra+-+SP,+06766-020" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Traçar Rota no GPS</a>
+                </div>
+
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.485601269389!2d-46.7915!3d-23.6261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce524c8b0b92e7%3A0x28976b3c2901c2!2sR.%20Vicente%20Pereira%2C%20131%20-%20Parque%20Maraba%2C%20Tabo%C3%A3o%20da%20Serra%20-%20SP%2C%2006766-020!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização Portas de Aço Emanuel"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       CTA FINAL
+       ========================================================================== -->
+    <section class="cta-final-section">
+        <div class="container">
+            <div class="cta-final-box">
+                <div class="tag-label" style="justify-content: center;">Orçamento Rápido</div>
+                <h2 class="cta-final-title">Precisa de uma porta de aço ou manutenção?</h2>
+                <p class="cta-final-desc">Fale diretamente com a Portas de Aço Emanuel e solicite seu orçamento sem compromisso.</p>
+                <a href="https://wa.me/5511911876222?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Portas%20de%20A%C3%A7o%20Emanuel%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn btn-primary" 
+                   style="font-size: 1.1rem; padding: 1.2rem 2.5rem;">
+                    Chamar no WhatsApp
+                </a>
+                <div class="cta-phone-display">
+                    (11) 91187-6222 · Atendimento 24 Horas
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo" style="margin-bottom: 1rem;">
+                        <div class="logo-symbol">
+                            <div class="logo-bar"></div>
+                            <div class="logo-bar"></div>
+                            <div class="logo-bar"></div>
+                        </div>
+                        <div class="logo-text">
+                            Portas de Aço
+                            <span>Emanuel</span>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 0.875rem; max-width: 360px;">
+                        Serralheria especializada em fabricação, instalação e manutenção emergencial de portas de aço em Taboão da Serra e região.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="footer-col-title">Navegação</div>
+                    <div class="footer-links">
+                        <a href="#inicio">Início</a>
+                        <a href="#servicos">Serviços</a>
+                        <a href="#diferenciais">Diferenciais</a>
+                        <a href="#trabalhos">Trabalhos</a>
+                        <a href="#avaliacoes">Avaliações</a>
+                        <a href="#sobre">Sobre</a>
+                        <a href="#contato">Contato</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="footer-col-title">Contato e Local</div>
+                    <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 0.5rem;">
+                        R. Vicente Pereira, 131 - Parque Maraba<br>Taboão da Serra - SP, 06766-020
+                    </p>
+                    <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 0.5rem;">
+                        <strong>Telefone:</strong> (11) 91187-6222
+                    </p>
+                    <p style="color: var(--red-main); font-size: 0.85rem; font-weight: 800;">
+                        ATENDIMENTO 24 HORAS
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>© 2026 Portas de Aço Emanuel. Todos os direitos reservados.</div>
+                <div>Taboão da Serra – SP</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5511911876222?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Portas%20de%20A%C3%A7o%20Emanuel%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+    </a>
+
+    <!-- ==========================================================================
+       JAVASCRIPT
+       ========================================================================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.getElementById('header');
+            const mobileToggle = document.getElementById('mobile-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            // Alterar efeito do header no scroll
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // Toggle do Menu Hambúrguer
+            mobileToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+
+            // Fechar menu mobile ao clicar em um link
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                });
+            });
+
+            // Smooth Scroll com offset para o header fixo
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        e.preventDefault();
+                        const headerOffset = 80;
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
